@@ -20,7 +20,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
-/* line 24, /Users/HEEJU/Documents/gr/styles/default.scss */
+/* line 23, /Users/HEEJU/Documents/gr/styles/default.scss */
+a {
+  color: deeppink;
+  text-decoration: none; }
+
+/* line 28, /Users/HEEJU/Documents/gr/styles/default.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 33, /Users/HEEJU/Documents/gr/styles/default.scss */
 nav ul {
   margin: 0 -0.2rem;
   padding-left: 0.5rem;
@@ -29,24 +38,24 @@ nav ul {
   line-height: 2rem; }
 
 @media (max-width: 40rem) {
-  /* line 33, /Users/HEEJU/Documents/gr/styles/default.scss */
+  /* line 42, /Users/HEEJU/Documents/gr/styles/default.scss */
   nav ul {
     margin: 0 -1.5rem;
     padding-left: 1rem; } }
 
-/* line 39, /Users/HEEJU/Documents/gr/styles/default.scss */
+/* line 48, /Users/HEEJU/Documents/gr/styles/default.scss */
 nav li {
   float: left;
   list-style-type: none; }
 
-/* line 44, /Users/HEEJU/Documents/gr/styles/default.scss */
+/* line 53, /Users/HEEJU/Documents/gr/styles/default.scss */
 nav a {
   display: inline-block;
   padding: 0 0.5rem;
   height: 2rem;
   line-height: 2rem; }
 
-/* line 52, /Users/HEEJU/Documents/gr/styles/default.scss */
+/* line 61, /Users/HEEJU/Documents/gr/styles/default.scss */
 main {
   clear: both;
   padding-top: 2rem; }

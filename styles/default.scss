@@ -20,6 +20,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+a {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 nav {
     ul {
         margin: 0 -0.2rem;
