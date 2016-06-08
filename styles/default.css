@@ -1,0 +1,54 @@
+/* line 1, /Users/HEEJU/Documents/gr/styles/default.scss */
+* {
+  box-sizing: border-box;
+  xoutline: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* line 6, /Users/HEEJU/Documents/gr/styles/default.scss */
+html {
+  background-color: pink;
+  font-size: 16px;
+  line-height: 1.7; }
+
+/* line 12, /Users/HEEJU/Documents/gr/styles/default.scss */
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 1.5rem; }
+
+/* line 18, /Users/HEEJU/Documents/gr/styles/default.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+/* line 24, /Users/HEEJU/Documents/gr/styles/default.scss */
+nav ul {
+  margin: 0 -0.2rem;
+  padding-left: 0.5rem;
+  background-color: mediumaquamarine;
+  height: 2rem;
+  line-height: 2rem; }
+
+@media (max-width: 40rem) {
+  /* line 33, /Users/HEEJU/Documents/gr/styles/default.scss */
+  nav ul {
+    margin: 0 -1.5rem;
+    padding-left: 1rem; } }
+
+/* line 39, /Users/HEEJU/Documents/gr/styles/default.scss */
+nav li {
+  float: left;
+  list-style-type: none; }
+
+/* line 44, /Users/HEEJU/Documents/gr/styles/default.scss */
+nav a {
+  display: inline-block;
+  padding: 0 0.5rem;
+  height: 2rem;
+  line-height: 2rem; }
+
+/* line 52, /Users/HEEJU/Documents/gr/styles/default.scss */
+main {
+  clear: both;
+  padding-top: 2rem; }
+
+/*# sourceMappingURL=default.css.map */
