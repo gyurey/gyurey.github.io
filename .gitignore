@@ -1,2 +1,4 @@
 _site/
 _ops/
+*.css
+*.css.map
