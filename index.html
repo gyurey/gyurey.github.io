@@ -10,3 +10,16 @@ layout: default
 <p>이번 사건이 발생한 해당 섬 <a href="#">이장단협의회</a>와 주민자치위원회는 8일 사과문을 내고 "일부 주민이 이런 엄청난 사건을 저지른 데 대해 이유 여하를 막론하고 피해 당사자와 가족, 국민 여러분에게 진심으로 사과드린다"고 말했다.</p>
 
 <p>이장단협의회와 주민자치위원회는 "주민과 학생들을 위해 고생하시는 피해 여교사를 비롯한 학교 선생님들에게도 평소 관심과 배려를 하지 못해 죄송스럽다"며 "씻을 수 없는 범죄를 저지른 가해자들은 법에서 정한 응분의 대가를 치러야 할 것"이라고 말했다.</p>
+
+<ul>
+{% for article in site.data.news %}
+  <li>
+      <h2><a href="{{ article.articleUrl }}">{{ article.title }}</a></h2>
+      <div>{{ article.tags | replace:'|',', '}}</div>
+      <p>
+        {{ article.summary }}
+        ...<a href="{{ article.articleUrl }}">더보기</a>
+      </p>
+  </li>
+{% endfor %}
+</ul>
