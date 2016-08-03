@@ -60,6 +60,8 @@ main, footer, nav, .main-title {
 
 header {
     background-color: hotpink;
+    background: linear-gradient(to bottom, #ff89d4 0%, #ff69b4 80%);
+    
 }
 
 nav {
@@ -116,11 +118,11 @@ footer {
         margin-right: 0.3rem;
         
         a {
-                background-color: #F8F8F8;
+            background-color: #F8F8F8;
             padding: 0.2rem 0.4rem;
             letter-spacing: 0.5px;
             border-bottom: 1px solid #FDD;
-            border-radius: 3px;
+            border-radius: 4px;
             border-right: 1px solid #FDD;
         }
     }
@@ -133,6 +135,7 @@ footer {
 .button {
     padding: 0.8rem 1.6rem;
     color: #FFF;
+    border-radius: 4px;
     background-color: hotpink;
 }
 .button:hover {
