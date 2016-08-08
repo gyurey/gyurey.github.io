@@ -52,7 +52,12 @@ main, footer, nav, .main-title {
     color: #FFF;
     max-width: 40rem;
     margin: 0 auto;
-    
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     @media (max-width: 400px) {
         font-size: 2.5rem;
     }
@@ -61,24 +66,24 @@ main, footer, nav, .main-title {
 header {
     background-color: hotpink;
     background: linear-gradient(to bottom, #ff89d4 0%, #ff69b4 80%);
-    
+
 }
 
 nav {
     padding-top: 2rem;
-    
+
     ul {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: -0.5rem;
         padding-left: 0;
     }
-    
+
     li {
         display: inline-block;
         list-style-type: none;
     }
-    
+
     a {
         display: inline-block;
         padding: 0 0.5rem;
@@ -112,11 +117,11 @@ footer {
     list-style-type: none;
     padding: 0.5rem 0 0;
     margin: 0;
-    
+
     li {
         display: inline;
         margin-right: 0.3rem;
-        
+
         a {
             background-color: #F8F8F8;
             padding: 0.2rem 0.4rem;
@@ -141,4 +146,13 @@ footer {
 .button:hover {
     text-decoration: none;
     background-color: deeppink;
+}
+
+.article-body {
+    .thumbnail {
+        height: 8rem;
+        display: block;
+        float: left;
+        margin: 0.2rem 1rem 1rem 0;
+    }
 }

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+
+<div class="meta">
+    <div class="etc">
+    2016-05-25 / 연합뉴스 / 댓글: 394개
+    </div>
+
+    <ul class="tags">
+        <li><a href="#">#성폭행</a></li>
+        <li><a href="#">#범죄</a></li>
+        <li><a href="#">#여성혐오</a></li>
+    </ul>
+</div>
+
+<div class="article-body">
+    {% if page.imageUrl %}
+    <p>
+        <img src="{{ page.imageUrl }}" alt="Thumbnail" class="thumbnail">
+    </p>
+    {% endif %}
+    <p>{{ page.summary }}...</p>
+</div>
+
+<div class="buttons">
+    <a href="{{ page.articleUrl }}" target="_new" class="button">기사 본문 읽기</a>
+</div>
+
