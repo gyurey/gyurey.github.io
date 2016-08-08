@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
+<div class="news-home">
 <ul class="articles">
 {% for article in site.data.news %}
   <li class="article">
       <h2><a href="/news/{{ article.date }}">{{ article.title }}</a></h2>
-      <div>{{ article.tags | replace:'|',', '}}</div>
+      <ul class="tags">
+          {% assign tags = article.tags | split:"|" %}
+          {% for tag in tags %}
+          <li><a href="#">#{{ tag }}</a></li>
+          {% endfor %}
+      </ul>
   </li>
 {% endfor %}
 </ul>
+</div>
