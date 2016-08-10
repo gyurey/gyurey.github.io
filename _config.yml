@@ -1,0 +1,5 @@
+page_gen:
+ - data: news
+   name: date
+ - data: categories
+   name: slug

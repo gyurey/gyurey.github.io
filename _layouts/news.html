@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="main-news">
+<h2>{{ page.title }}</h2>
+
+<div class="meta">
+    <div class="etc">
+    {{ page.date | slice: 0,4 }}-{{ page.date | slice: 4,2 }}-{{ page.date | slice: 6,2 }} /
+    {{ page.provider }} /
+    댓글: {{ page.comments }}개
+    </div>
+
+    <ul class="tags">
+        {% assign tags = page.tags | split:"|" %}
+        {% for tag in tags %}
+            {% for category in site.data.categories %}
+                {% if tag == category.label %}
+                <li><a href="/categories/{{ category.slug }}">#{{ tag }}</a></li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="article-body">
+   {% if page.imageUrl %}
+   <p>
+       <img src="{{ page.imageUrl }}" alt="thumbnail" class="thumbnail">
+   </p>
+   {% endif %}
+    <p>{{ page.summary }} ...</p>
+</div>
+
+<div class="buttons">
+    <a href="{{ page.articleUrl }}" target="_new" class="button">기사 본문 읽기</a>
+</div>
+</div>

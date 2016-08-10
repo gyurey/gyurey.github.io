@@ -10,7 +10,7 @@ html {
     font-family: Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Malgun Gothic, Verdana, Arial, Dotum, sans-serif;
     font-size: 14px;
     font-weight: 200;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #444;
     background-color: #FEFCFC;
 }
@@ -43,7 +43,7 @@ main, footer, nav, .main-title {
     padding-right: 1rem;
 }
 
-.main-title {
+h1.main-title {
     padding-top: 6rem;
     padding-bottom: 1rem;
     line-height: 1;
@@ -53,9 +53,18 @@ main, footer, nav, .main-title {
     max-width: 40rem;
     margin: 0 auto;
     
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     @media (max-width: 400px) {
         font-size: 2.5rem;
     }
+}
+
+h2 {
+    padding-bottom: 1.5rem;
 }
 
 header {
@@ -105,7 +114,6 @@ footer {
 .meta {
     font-size: 0.8rem;
     color: #888;
-    padding: 1.5rem 0;
 }
 
 .tags {
@@ -128,17 +136,77 @@ footer {
     }
 }
 
-.buttons {
-    padding: 2rem 0;
-    text-align: center;
+.main-index {
+    .categories {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .categories > li {
+        display: inline-block;
+        width: 30%;
+        height: 4rem;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        text-align: center;
+    }
+    
+    .categories > li a {
+        display: inline-block;
+        line-height: 4rem;
+        height: 4rem;
+        width: 100%;
+        background-color: #F8F8F8;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid #FDD;
+        border-radius: 4px;
+        border-right: 1px solid #FDD;
+    }
 }
-.button {
-    padding: 0.8rem 1.6rem;
-    color: #FFF;
-    border-radius: 4px;
-    background-color: hotpink;
+
+.main-categories {
+    .articles {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .articles > li {
+        margin: 2rem 0 0.5rem;
+    }
+    .articles > li:first-child {
+        margin-top: 0;
+    }
+
+    h3 {
+        font-weight: 200;
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
+    }
 }
-.button:hover {
-    text-decoration: none;
-    background-color: deeppink;
+
+.main-news {
+    .buttons {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .button {
+        padding: 0.8rem 1.6rem;
+        color: #FFF;
+        border-radius: 4px;
+        background-color: hotpink;
+    }
+    .button:hover {
+        text-decoration: none;
+        background-color: deeppink;
+    }
+
+    .article-body {
+        padding-top: 1.5rem;
+        .thumbnail {
+            float: left;
+            display: block;
+            height: 7.8rem;
+            margin: 0.2rem 1rem 1rem 0;
+        }
+    }    
 }
